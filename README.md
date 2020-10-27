@@ -1,1 +1,2 @@
-npm install & npm run start-electron
+$ npm install 
+$ npm run start-electron
