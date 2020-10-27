@@ -44,4 +44,3 @@ function btnEgal() {
         $('#result1').prepend( '<tr id="'+ id +'" ><td class="text-center hvr-round-corners td" style="width: 10000px">'+ localStorage[localStorage.key(i)] + '<br></td></tr>');
 }
 }
-

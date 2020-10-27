@@ -1,6 +1,6 @@
 const electron = require('electron');
 const app = require('./app');
-
+const { BrowserWindow } = require('electron')
 let window;
 
 function createWindow() {
@@ -8,7 +8,7 @@ function createWindow() {
     window = new electron.BrowserWindow({
         width: 400,
         height: 780,
-        frame: false ,
+        frame: true ,
         title: 'Calculatrice',
         movable: true,
         webPreferences: {
@@ -21,7 +21,7 @@ function createWindow() {
  
     /* Display the homepage of the server */
     window.loadURL('http://127.0.0.1:3000');
- 
+
     /* Lorsque la fenêtre est fermée, on l'indique au système */
     window.on('closed', () => {
         window = null;
