@@ -1,31 +1,45 @@
-<div class="container  p-5">
-    
-    <h1 class="text-center">FKSimplon</h1>
-    <br/>
-    <div class="card">
-
-      <div class="card-body">
-
-        <div id="message"></div>
-
-        <form method="post" id="connexion">
-          <div class="form-group">
-            <label>Nom d'utilisateur</label>
-            <input type="text" class="form-control" id="username" required>
-          </div>
-          <div class="form-group">
-            <label>Mot de passe</label>
-            <input type="password" class="form-control" id="password" required>
-          </div>
-          <button type="submit" class="btn btn-dark btn-block">Connexion</button>
-          <a id="menuInscription" class="btn btn-dark btn-block">Inscription</a>
-          <a id="menuDashboard" class="btn btn-dark btn-block">Dashboard</a>
-        </form>
+<%- include('../includes/head') -%>
 
 
-      </div>
+<div class="fleex" style="padding-top: 10px !important;">
 
+        <div style="width: 100%; padding: 5px">
+            <div id="balise" style="width: 100%; height: 50px; background-color:#555673 " align="right">
+                <span id="calcul" style="font-size: 1.5em"></span>
+            </div>
 
-    </div>
-  
+            <!-- the buttons -->
+            <div class="calculator-buttons">
+                <button class="calc-button is-clear" onclick="btnDelete()">C</button>
+                <button class="calc-button"onclick="btnDivision()">&divide;</button>
+
+                <button class="calc-button" onclick="btn(7)">7</button>
+                <button class="calc-button"onclick="btn(8)">8</button>
+                <button class="calc-button"onclick="btn(9)">9</button>
+                <button class="calc-button" onclick="btnMultiple()">&times;</button>
+
+                <button class="calc-button" onclick="btn(4)">4</button>
+                <button class="calc-button" onclick="btn(5)">5</button>
+                <button class="calc-button" onclick="btn(6)">6</button>
+                <button class="calc-button" onclick="btnMoins()">&minus;</button>
+
+                <button class="calc-button" onclick="btn(1)">1</button>
+                <button class="calc-button" onclick="btn(2)">2</button>
+                <button class="calc-button" onclick="btn(3)">3</button>
+                <button class="calc-button" onclick="btnPlus()">&plus;</button>
+
+                <button class="calc-button is-zero" onclick="btn(0)">0</button>
+                <button class="calc-button" onclick="btnVirgule()">.</button>
+                <button class="calc-button is-equals" onclick="btnEgal()">&equals;</button>
+            </div>
+                <div id="result " class="vertical-menu" style="margin-top: 10px; border: 1px solid #555673; width: 100% ;border-radius: 5px">
+                    <table id="result1"  style=" color: #9feaf9; ">
+
+                    </table>
+                </div>
+
 </div>
+</div>
+
+
+<%- include('../includes/footer') -%>

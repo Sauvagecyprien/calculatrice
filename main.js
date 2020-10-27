@@ -6,9 +6,12 @@ let window;
 function createWindow() {
     /* Créer une fenêtre de 800px par 600px sans bordures */
     window = new electron.BrowserWindow({
-        width: 800,
-        height: 600,
-        frame: false
+        width: 400,
+        height: 780,
+        frame: true,
+        webPreferences: {
+            nodeIntegration: false
+        }
     });
  
     /* Si vous décommentez cette ligne, vous verrez la console de débug Chrome */
