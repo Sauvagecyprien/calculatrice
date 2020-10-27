@@ -5,6 +5,7 @@
 
 body{
     background-color: #2f3241;
+
 }
 .titre{
     font-size: 25px;
@@ -26,6 +27,8 @@ body{
     border-radius: 10px ;
     color: #9feaf9;
     font-family: digital;
+    -webkit-app-region: drag;
+
 }
 
 
@@ -34,12 +37,11 @@ body{
     height: 150px;
     overflow-y: auto;
     font-family: digital;
-
+    font-size: 1.5em !important;
 }
 
 .td{
   border-bottom: 1px solid #555673;
-    font-size: 1.5em !important;
 }
 
 .vertical-menu tr:hover {
@@ -146,4 +148,3 @@ body{
 .is-equals {
     background: #20733b;
 }
-
