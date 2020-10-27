@@ -1,14 +1,16 @@
 const electron = require('electron');
 const app = require('./app');
- 
+
 let window;
- 
+
 function createWindow() {
     /* Créer une fenêtre de 800px par 600px sans bordures */
     window = new electron.BrowserWindow({
         width: 400,
         height: 780,
-        frame: true,
+        frame: true ,
+        title: 'Calculatrice',
+        movable: true,
         webPreferences: {
             nodeIntegration: false
         }
