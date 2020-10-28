@@ -8,10 +8,8 @@ function createWindow() {
     window = new electron.BrowserWindow({
         width: 400,
         height: 780,
-        frame: false ,
+        frame: false,
         title: 'Calculatrice',
-        resizable: false,
-        movable: true,
         webPreferences: {
             nodeIntegration: false
         }
@@ -46,7 +44,7 @@ electron.app.on('window-all-closed', () => {
  
 /* Fonction utile pour MacOS */
 electron.app.on('activate', () => {
-    if (win === null) {
+    if (window === null) {
         createWindow();
     }
 });

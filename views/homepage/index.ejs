@@ -1,12 +1,13 @@
 <%- include('../includes/head') -%>
 <div class="fleex" id="main" >
 
+<!--    le span qui permet de visualisé le calcule et par conséquent le stocker-->
         <div style="width: 100%; padding: 5px; margin-top: 20px">
             <div id="balise" style="width: 100%; height: 50px; background-color:#555673 " align="right">
                 <span id="calcul" style="font-size: 1.5em"></span>
             </div>
 
-            <!-- the buttons -->
+            <!-- les bouttons de la calculatrice -->
             <div class="calculator-buttons">
                 <button class="calc-button is-clear" onclick="btnDelete()">C</button>
                 <button class="calc-button"onclick="btnDivision()">&divide;</button>
@@ -31,6 +32,7 @@
                 <button class="calc-button is-equals" onclick="btnEgal()">&equals;</button>
             </div>
 
+<!--            endroit ou les résultats des anciens calculs s'afficheront (local.storage)-->
                 <div id="result " class="vertical-menu" style="margin-top: 10px; border: 1px solid #555673; width: 100% ;border-radius: 5px">
                     <table id="result1"  style=" color: #9feaf9; ">
 
