@@ -1,5 +1,5 @@
 {
-  "name": "Calculatrice",
+  "name": "fiche-kilometrique",
   "version": "1.0.0",
   "description": "calculatrice maison",
   "main": "main.js",
@@ -8,7 +8,7 @@
     "productName": "calculatrice",
     "icon": "/assets/images/calculator2.png"
   },
-  "scripts": {
+  "scripts": {git
     "start-electron": "electron .",
     "start": "electron-forge start",
     "package": "electron-forge package",
