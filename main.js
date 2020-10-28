@@ -8,8 +8,9 @@ function createWindow() {
     window = new electron.BrowserWindow({
         width: 400,
         height: 780,
-        frame: true ,
+        frame: false ,
         title: 'Calculatrice',
+        resizable: false,
         movable: true,
         webPreferences: {
             nodeIntegration: false

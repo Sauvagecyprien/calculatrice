@@ -12,4 +12,26 @@
 
   </head>
   <body>
-<!--  <button id="screenerExit" style="float: right">X</button>-->
+  <header id="titlebar">
+    <div id="drag-region">
+      <div id="window-title">
+        <span>Calculatrice</span>
+      </div>
+      <div id="window-controls">
+
+        <div class="button" id="min-button" onclick="minii()">
+          <img class="icon" srcset="images/min-w-10.png 1x," draggable="false" />
+        </div>
+
+        <div class="button" id="max-button" onclick="maxii()">
+          <img class="icon" srcset="images/max-w-10.png 1x" draggable="false" />
+        </div>
+
+
+        <div class="button" id="close-button" onclick="closee()">
+          <img class="icon" srcset="images/close-w-10.png 1x" draggable="false" />
+        </div>
+
+      </div>
+    </div>
+  </header>
