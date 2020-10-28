@@ -9,6 +9,7 @@ function createWindow() {
         width: 400,
         height: 780,
         frame: false,
+        icon: __dirname + '/assets/images/calculator2.png',
         title: 'Calculatrice',
         webPreferences: {
             nodeIntegration: false

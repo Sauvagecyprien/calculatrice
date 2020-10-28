@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "calculatrice maison",
   "main": "main.js",
+  "build": {
+    "appID": "calculatrice",
+    "productName": "calculatrice",
+    "icon": "/assets/images/calculator2.png"
+  },
   "scripts": {
     "start-electron": "electron .",
     "start": "electron-forge start",
