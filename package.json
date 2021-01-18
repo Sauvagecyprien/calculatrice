@@ -8,7 +8,7 @@
     "productName": "calculatrice",
     "icon": "/assets/images/calculator2.png"
   },
-  "scripts": {git
+  "scripts": {
     "start-electron": "electron .",
     "start": "electron-forge start",
     "package": "electron-forge package",
